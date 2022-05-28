@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class = "page-subtitle">
+    {{ page.date | date_to_string }}
+    {% assign author = site.authors | where: 'short_name', page.author | first %}
+    {% if author and site.show_authors %}
+     <a href="{{ author.url }}">{{author.name }}</a>
+    {% endif %}
+</div>
+
+{{ content }}

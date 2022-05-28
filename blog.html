@@ -1,0 +1,15 @@
+---
+layout: default
+title: Latest Posts
+---
+
+{% for post in site.posts %}
+    <a href = "{{ post.url }}" class = "post-title"> {{ post.title }} </a>
+    <div class = "post-details">
+     {{ post.date | date_to_string }}
+    </div>
+    <div class="post-excerpt">
+        {{ post.excerpt }}
+    </div>
+    <br>
+{% endfor %}
