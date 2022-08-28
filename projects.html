@@ -1,0 +1,20 @@
+---
+layout: default
+title: Projects
+---
+
+{% for project in site.projects %}
+<div class="post-title">
+    <a href="{{ project.url }}"> {{ project.title | downcase}} </a>
+    <!-- <a href="{{ project.link }}"><i class='fab fa-github'></i></a> -->
+</div>
+<div class="post-details">
+    {{ project.date | date_to_string }}
+    {% if project.link %}
+    {% endif %}
+</div>
+<div class="post-excerpt">
+    {{ project.excerpt }}
+</div>
+<br>
+{% endfor %}

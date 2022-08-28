@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="page-subtitle">
+    {{ page.time }} &nbsp;
+    {% if page.link %}
+    <a href="{{ page.link }}"><i class='fab fa-github'></i></a>
+    {% endif %}
+</div>
+{{ content }}

@@ -1,6 +1,8 @@
 collections:
   authors:
     output: true
+  projects:
+    output: true
 
 show_authors: false
 
@@ -17,6 +19,10 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
     values:
       layout: "default"
-
