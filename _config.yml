@@ -3,6 +3,8 @@ collections:
     output: true
   projects:
     output: true
+  posts:
+    output: true
 
 show_authors: false
 
@@ -26,3 +28,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

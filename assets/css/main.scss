@@ -1,3 +1,7 @@
+---
+---
+@import "sass-code-highlight/github.scss";
+
 $max-width: 740px;
 $accent: #84a9d3; //#0eb077;
 $accentlight: rgba(101, 207, 181, 0.3);
@@ -5,20 +9,20 @@ $accentlight: rgba(101, 207, 181, 0.3);
 // Some CSS taken from https://www.xuningyang.com/
 // basic 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: "Source Sans Pro", "Inconsolata", sans-serif;
-    height: 100%;
-    line-height: 0.7em; 
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 300;
-    text-shadow: 0 0 1px rgba(58,57,57,0.25);
+  margin: 0;
+  font-family: "Source Sans Pro", "Inconsolata", sans-serif;
+  height: 100%;
+  line-height: 0.7em;
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 300;
+  text-shadow: 0 0 1px rgba(58, 57, 57, 0.25);
 }
 
 a {
@@ -26,7 +30,7 @@ a {
   color: $accent;
 }
 
-i { 
+i {
   text-decoration: none;
   color: $accent;
 }
@@ -34,8 +38,9 @@ i {
 a:hover {
   text-decoration: none;
   color: $accentlight;
-  text-shadow: 0 0 1px rgba(30, 138, 100,0.3);
+  text-shadow: 0 0 1px rgba(30, 138, 100, 0.3);
 }
+
 hr {
   border: none;
   margin: 5px;
@@ -44,13 +49,13 @@ hr {
 }
 
 h3 {
-padding:1em 0 0 0;
-line-height: 0em;
+  padding: 1em 0 0 0;
+  line-height: 0em;
 }
 
 h4 {
-padding:1em 0 0 0;
-line-height: 0em;
+  padding: 1em 0 0 0;
+  line-height: 0em;
 }
 
 // div classes
@@ -63,10 +68,12 @@ line-height: 0em;
 .alignable {
   display: inline-block;
 }
+
 .pull-left {
   @extend .alignable;
   float: left;
 }
+
 .pull-right {
   @extend .alignable;
   float: right;
@@ -74,12 +81,13 @@ line-height: 0em;
 
 // pages
 
-.page-title{
+.page-title {
   text-align: center;
   font-size: xx-large;
   line-height: 2;
 }
-.page-subtitle{
+
+.page-subtitle {
   text-align: center;
 }
 
@@ -87,12 +95,13 @@ line-height: 0em;
 #site-title {
   font-size: 25px;
   // color: #272727;
-  text-shadow: 0 0 3px rgba(58,57,57,0.25);
+  text-shadow: 0 0 3px rgba(58, 57, 57, 0.25);
   display: inline-block;
   padding: 0px 0px 0px 0px;
   margin: 0px
 }
-#site-title:hover{
+
+#site-title:hover {
   color: $accent;
 }
 
@@ -106,6 +115,7 @@ line-height: 0em;
   padding: 0px 0 0px 0;
   margin-left: 20px;
 }
+
 .navbar-list {
   list-style-type: none;
   margin: 0 5px 0 10px;
@@ -120,12 +130,12 @@ line-height: 0em;
   text-align: center;
 }
 
-#footer-icon{
+#footer-icon {
   padding-bottom: 10px;
 }
 
 //blog page
-.post-title{
+.post-title {
   max-width: 500px;
   display: inline-block;
   font-size: 25px;
@@ -133,14 +143,14 @@ line-height: 0em;
   margin-top: 10px // this must match the one in .post-details
 }
 
-.post-details{
+.post-details {
   @extend .pull-right;
   text-align: right;
   margin-left: 20px;
   margin-top: 10px
 }
 
-.post-snippet{
+.post-snippet {
   max-width: 500px;
-  margin-top:10px
+  margin-top: 10px
 }
