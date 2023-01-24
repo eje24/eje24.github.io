@@ -3,8 +3,9 @@ layout: default
 title: Latest Posts
 ---
 
+
 {% for post in site.posts %}
-<a href="{{ site.baseurl }}/{{ post.url }}" class="post-title"> {{ post.title }} </a>
+<a href="{{ site.baseurl }}{{ post.url }}" class="post-title"> {{ post.title }} </a>
 <div class="post-details">
     {{ post.date | date_to_string }}
 </div>
