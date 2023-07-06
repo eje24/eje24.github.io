@@ -13,7 +13,7 @@ Convolutional neural networks (CNN's) are ubiquitous in machine learning today. 
 - Why limit ourselves to the plane? Just as conventional CNN's are based on translational cross-correlation on the plane, we may similarly consider translational cross-correlation in higher dimensional space, rotational cross-correlation on the plane, and even rotational cross-correlation on the sphere (not flat), to name a few examples. Such spaces on which groups act are known as *homogeneous spaces*.
 - Groups can act not just on a "base space", but also on channels (think: RGB in images) for more expressive CNN's. The combination of a base space (the plane) and channel space can be realized as a single space (the associated bundle) on which a symmetry group might act. Group action on channel space can then be extended naturally to a group action on the combined space (the induced representation).
 
-My idea was to follow the literature and present successively more general views of CNN's, discussing each big idea in turn. The goal is for it to read like walking through a garden of ideas, hence the title. Until the full draft is written out in this blog, the garden will take the form of this [linked PDF](/assets/cnn_garden.pdf). 
+My idea was to follow the literature and present successively more general views of CNN's, discussing each big idea in turn. The goal is for it to read like walking through a garden of ideas, hence the title. Until the full draft is written out in this blog, the garden will take the form of this [linked PDF]({{site.baseurl}}/assets/cnn_garden.pdf). 
 
 ### Notes
 
