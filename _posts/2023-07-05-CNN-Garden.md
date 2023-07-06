@@ -5,11 +5,9 @@ author: Ezra
 katex: True
 ---
 
-### Introduction
-
 Convolutional neural networks (CNN's) are ubiquitous in machine learning today. This popularity stems from one remarkable feature of CNN's: translational equivariance. Basically, this means that if I first translate an image and then pass it through a CNN, I get the same result as if I had first passed it through the CNN, and then translated it. It would be a mistake to conclude that this is the whole picture. Concealed by the familiar scenery of flat, two-dimensional, pixelated images lies a siginficantly more general framework, of which "conventional" CNN's are only a special case. Consider:
 
-- The key word in in *translational equivariance* is *translational*, and the set of translations are but one of many subgroups of the group of symmetries of the plane.
+- The key word in in *translational equivariance* is *translational*, and the set of translations is but one of many subgroups of the group of symmetries of the plane.
 - **Convolutional** neural networks are commonly implemented not as convolutions, but as *cross-correlations*. Cross-correlations are taken with respect to some symmetry group, and produce functions defined on this same symmetry group. The fact that conventional CNN's take in functions on the plane and produce functions on the plane is just a coincidence: the translation group has the "same structure" as the plane (think about this!). 
 - We can achieve more exotic equivariance properties by taking cross-correlations with respect to more complex symmetry groups (think: rotations). With this perspective, we can think of a conventional CNN as lifting a function on $\mathbb{Z}^2$ to a function on $\mathbb{T}(2)$ (the translation group of $\mathbb{Z}^2$). In general, cross-correlation lifts a *signal* from a base space to a desired symmetry group.
 - Why limit ourselves to the plane? Just as conventional CNN's are based on translational cross-correlation on the plane, we may similarly consider translational cross-correlation in higher dimensional space, rotational cross-correlation on the plane, and even rotational cross-correlation on the sphere (not flat), to name a few examples. Such spaces on which groups act are known as *homogeneous spaces*.
