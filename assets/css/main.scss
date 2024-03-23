@@ -153,4 +153,34 @@ h4 {
 .post-snippet {
   max-width: 500px;
   margin-top: 10px
+}  
+.preprints {
+  padding-left: 0;
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.preprint-item {
+  list-style-type: none;
+  margin-bottom: 20px; /* Add space between items */
+}
+
+.preprint-title {
+  font-weight: bold;
+  // margin-bottom: 1px; /* Add space between the title and authors */
+}
+
+.preprint-links a {
+  text-decoration: none;
+  color: $accent;
+  margin-right: 10px;
+  font-size: 16px; /* Match the font size of the links to the text */
+}
+
+.preprint-links a:hover {
+  text-decoration: underline;
+}
+
+.preprint-authors {
+  margin-bottom: 5px; /* Add space between the authors and the links */
 }
