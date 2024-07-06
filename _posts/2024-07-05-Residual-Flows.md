@@ -1,5 +1,5 @@
 ---
-layout: post
+glayout: post
 title: Residual Flows
 author: Ezra
 ---
@@ -190,7 +190,7 @@ Thus, the Roulette estimator is unbiased! This is the approach taken by the auth
 
 <center>
 <img src="{{site.baseurl}}/assets/images/residual_graph.png" alt="drawing" width="600"/>
-<div> The i-ResNet optimizes a biased version of the true objective at training time, and performs considerably worse at inference time. The corresponding residual flow, which uses the Roulette estimator does not display this discrepancy.</div>
+<div> The i-ResNet optimizes a biased version of the true objective at training time, and performs considerably worse at inference time. The corresponding residual flow, which uses the Roulette estimator does not display this discrepancy. Figure taken from <a href="#2">[2]</a>.</div>
 </center>
 
 ## Implementing the Lipschitz Constraint
