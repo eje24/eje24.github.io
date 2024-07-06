@@ -160,7 +160,7 @@ $$
 \text{Var} \left[ v^T \left( \sum_{k=0}^{N} \frac{(-1)^k}{k} J_g(x)^k \right) v \right] \le 2 \left \lVert \sum_{k=0}^{N} \frac{(-1)^k}{k} J_g(x)^k \right \rVert_F \le 2 \sum_{k=0}^N \frac{(-1)^k}{k} \left \lVert  J_g(x)^k \right \rVert_F = \mathcal{O}(H_N \sqrt{d}),
 $$
 
-where the second inequality follows from the triangle inequality and where $H_N \triangleq \sum_{k=0}^N \frac{1}{N}$.
+where the second inequality follows from the triangle inequality and where $H_N \triangleq \sum_{k=0}^N \frac{1}{k}$.
 
 
 ## Unbiased Roulette Estimator
