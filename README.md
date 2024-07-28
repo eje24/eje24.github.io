@@ -1,3 +1,3 @@
 # Stuff to do
-- individual post and blog links dont work
+- add night/day mode
 - Add tags to posts/projects
