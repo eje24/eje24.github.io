@@ -139,7 +139,7 @@ diagonal entries. The clever trick is that the matrix-vector product $J_g(x)v$
 is equal to $\frac{\partial (g(x)^Tv)}{\partial x}$, and since $g(x)^T$ is a
 scalar, $\frac{\partial (g(x)^Tv)}{\partial x}$ can be computed is a single
 backwards pass of autograd. We can then dot this result with $v^T$ to obtain
-$v^T J_g(x) v$. If we assume the cost of autograd to be constant, then this simple trick reduces the trace computation from $\mathcal{O}(dN)$ to $\mathcal{O}(rN})$, where $r$ is the number of random vectors used to approximate the expectation. It is so effective that it's the
+$v^T J_g(x) v$. If we assume the cost of autograd to be constant, then this simple trick reduces the trace computation from $\mathcal{O}(dN)$ to $\mathcal{O}(rN)$, where $r$ is the number of random vectors used to approximate the expectation. It is so effective that it's the
 standard way of training [continuous normalizing flows](https://arxiv.org/abs/1810.01367), and in obtaining unbiased density estimates with other flow-based models like diffusion models.
 
 It's very nice that the Hutchinson trace estimator is unbiased, but we would
